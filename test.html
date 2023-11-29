@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.min.css">
+    <style>
+        .box{
+            border: 2px solid red;
+            width: 250px;
+        }
+
+        nav{
+            display: flex;
+        }
+        nav li{
+            list-style: none;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>responsibal</h1>
+    </div>
+    <div class="box">
+        <input type="button" name="text" id="text" value="submit">
+    </div>
+    <div class="box">
+        <input type="radio" name="text" class="radio" value="submit">male
+        <input type="radio" name="text" class="radio" value="submit">female
+    </div>
+
+    <div class="box">
+        <input type="time" name="text" id="cal">
+        <input type="range" name="text" id="prog">
+    </div>
+
+    <div>
+        <nav id="menu">  
+            <li>Home</li>
+            <li>about</li>
+            <li>Contact</li>
+        </nav>
+    </div>
+</body>
+</html>
+
+<script>
+    $(function(){
+        $('#text').button();
+        $('.box').draggable();
+
+        $('.radio').checkboxradio();
+
+        $('#id').datepicker();
+
+        $('#menu').menu();
+
+        $('#prog').progressbar();
+        
+    });
+</script>

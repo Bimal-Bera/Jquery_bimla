@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+      .logo:hover{
+          transform:rotate(-90deg);
+      }
+    </style>
+
+</head>
+<body class="" style="background-color: gray;">
+    <div class="container bg-white mt-5" style="border-radius: 20px;">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Product</a>
+                  
+                    <div class="collapse navbar-collapse" id="navbar" style="margin-left:35%;">
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                          <a class="nav-link" id="btn2" href="#">Home </a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" id="btn4" href="#">Product </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="btn1" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="btn3" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="btn5" href="#">FeedBack</a>
+                        </li>
+                      </ul>
+                      <!-- <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 font-weight-bold" type="search" placeholder="Search . ." aria-label="Search">
+                        <button style="background-color: #0049B7;" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form> -->
+                    </div>
+                  </nav>
+            </div>
+        </div>
+
+        <div class="d">
+          <table style="width: 100%;">
+            <tr>
+              <td style="width:50%">
+                  <h3 class="text">FeedBack</h3>
+                  <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur est repellat, nisi suscipit soluta voluptas facere quo, nihil 
+                      nemo adipisci vel ullam deserunt quos nam odio et rerum ad. Velit.</p>
+              </td>
+              <td>
+                <div class="top1">
+                  <div id="pass">
+                    <label for="">Password </label>
+                    <input type="password" class="form-control w-75" name="pass" id="">
+                  </div>
+  
+                  <div id="email">
+                    <label for="">Email </label>
+                    <input type="email" class="form-control w-75" name="email" id="">
+                  </div>
+  
+                  <div id="name">
+                    <label for="">Name </label>
+                    <input type="text" class="form-control w-75" name="name" id="">
+                  </div>
+  
+                  <div id="message">
+                    <label for="">Message </label><br>
+                    <textarea name="message" class="form-control w-75" id="mess" cols="30" rows="2"></textarea>
+                  </div>
+  
+                  <div id="button">
+                    <input type="button" class="btn btn-outline-info mb-4" name="name" value="submit" id="">
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col">
+            
+              <div class="pt-3" id="footer">
+                  <div>
+                    <i style="color: rgb(29, 105, 172);"><h1>ALL CATOGRY HERE</h1></i>
+                  </div>
+                  
+                  <div style="margin-top: 30px;">
+                    <img src="img/i5.png" alt="" class="logo" width="100px">
+                    <img src="img/i3.jfif" alt="" class="logo" width="100px">
+                    <img src="img/i4.png" alt="" class="logo" width="100px">
+                  </div>
+  
+                  <div style="margin-top: 70px;">
+                    <i style="color: rgb(29, 105, 172);"><p>Design By &copy;Bimal Bera</p></i>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <br>
+    </div>    
+</body>
+
+<script>
+    $(document).ready(function(){
+      
+    });
+
+    $('#btn1').click(function () { 
+    
+      window.location.href='about.html'
+      
+    });
+    $('#btn2').click(function () { 
+    
+    window.location.href='index.html'
+    
+  });
+  $('#btn3').click(function () { 
+    
+    window.location.href='contact.html'
+    
+  });
+  $('#btn4').click(function () { 
+    
+    window.location.href='product.html'
+    
+    });
+
+    $('#btn5').click(function () { 
+    
+    window.location.href='FeedBack.html'
+    
+  });
+
+    $('#pass').draggable();
+    $('#email').draggable();
+    $('#name').draggable();
+    $('#message').draggable();
+
+    $('.text').css({
+      'margin-left':'80px',
+      'margin-top':'50px'
+    })
+    $('.text1').css({
+      'margin-left':'80px',
+      
+    })
+
+    $('#pass').css({
+      'margin-left':'50px',
+    })
+
+    $('#email').css({
+      'margin-left':'50px',
+    })
+    $('#name').css({
+      'margin-left':'50px'
+    })
+
+    $('#message').css({
+      'margin-left':'50px',
+    })
+
+    $('mess').css({
+      'width':'20px'
+    })
+
+    $('#button').css({
+      'margin-top':'20px',
+      'margin-left': '40%'
+
+    })
+
+    $('.top1').css({
+      'margin-top':'50px',
+      'box-shadow': '2px 2px 13px 5px blue',
+      'border-radius': '20px',
+      'width':'90%',
+      'margin-left':'30px',
+      'margin-bottom':'50px',
+    })
+
+    $('#footer').css({
+      'background-image': 'url(img/img2.jpg)',
+      'text-align': 'center',
+      'background-repeat': 'no-repeat',
+      'background-size': 'cover',
+      'height': '300px',
+      'border-radius': '20px'
+
+    })
+    $('.logo').css({
+      'border-radius': '20px',
+      'margin-left':'20px'
+    })
+
+
+
+</script>
+</html>

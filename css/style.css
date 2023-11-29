@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    float: left;
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+}
